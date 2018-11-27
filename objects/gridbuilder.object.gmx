@@ -49,6 +49,30 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>543</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sprite_color</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>13</kind>
+            <string>16777215</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="9" enumb="113">
       <action>
@@ -152,9 +176,11 @@
           <argument>
             <kind>1</kind>
             <string>gridde = testgrid
+if ds_grid_height(gridde) &lt; 12{
 readgrid();
 ds_grid_resize(gridde,ds_grid_width(gridde),ds_grid_height(gridde)+1)
 RegenGrid();
+}
 </string>
           </argument>
         </arguments>
@@ -178,9 +204,11 @@ RegenGrid();
           <argument>
             <kind>1</kind>
             <string>gridde = testgrid
+if ds_grid_width(gridde) &lt; 12{
 readgrid();
 ds_grid_resize(gridde,ds_grid_width(gridde)+1,ds_grid_height(gridde))
 RegenGrid();
+}
 </string>
           </argument>
         </arguments>
@@ -204,9 +232,11 @@ RegenGrid();
           <argument>
             <kind>1</kind>
             <string>gridde = testgrid
+if ds_grid_height(gridde) &gt; 4{
 readgrid();
 ds_grid_resize(gridde,ds_grid_width(gridde),ds_grid_height(gridde)-1)
 RegenGrid();
+}
 </string>
           </argument>
         </arguments>
@@ -230,9 +260,11 @@ RegenGrid();
           <argument>
             <kind>1</kind>
             <string>gridde = testgrid
+if ds_grid_width(gridde) &gt; 4{
 readgrid();
 ds_grid_resize(gridde,ds_grid_width(gridde)-1,ds_grid_height(gridde))
 RegenGrid();
+}
 </string>
           </argument>
         </arguments>

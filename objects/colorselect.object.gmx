@@ -107,7 +107,8 @@ draw_set_font(t);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text_colour(self.x+16,self.y+16,string(colonum-1),c_black,c_black,c_black,c_black,1);
+            <string>///number text
+draw_text_colour(self.x+16,self.y+16,string(colonum-1),c_black,c_black,c_black,c_black,1);
 draw_text_colour(self.x+14,self.y+14,string(colonum-1),c_white,c_white,c_white,c_white,1);
 </string>
           </argument>
